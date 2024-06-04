@@ -1,6 +1,9 @@
 name: Send repository dispatch event
 
 on:
+  push:
+    branches: ["main"]
+    paths: ["references/**"]
   workflow_dispatch:
 
 jobs:
